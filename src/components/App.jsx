@@ -57,7 +57,7 @@ const App = () => {
     >
       <div>
         <h1>Phonebook</h1>
-        <Form onSubmit={handleSubmit} />
+        <Form addContact={handleSubmit} />
         <h2>Contacts</h2>
         <Filter filter={filter} onFilter={setFilter} />
         <ContactList contacts={filterContacts} onDeleteContact={handleDelete} />
@@ -66,4 +66,10 @@ const App = () => {
   );
 };
 
-export { App };
+export default App;
+
+
+
+
+
+

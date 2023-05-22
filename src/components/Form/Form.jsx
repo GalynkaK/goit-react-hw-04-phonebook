@@ -16,16 +16,16 @@ const Form = ({ addContact }) => {
     }
   };
 
+  const reset = () => {
+    setName('');
+    setNumber('');
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
     const contact = { name, number };
     addContact(contact);
     reset();
-  };
-
-  const reset = () => {
-    setName('');
-    setNumber('');
   };
 
   return (

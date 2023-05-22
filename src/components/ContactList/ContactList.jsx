@@ -4,8 +4,6 @@ import css from './ContactList.module.css';
 
 
 const ContactList = ({ contacts, onDeleteContact }) => {
-
-
   return (
     <ul className={css.contactList}>
       {contacts.map(contact => (
@@ -25,7 +23,6 @@ const ContactList = ({ contacts, onDeleteContact }) => {
   );
 }
 
-
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
@@ -36,4 +33,5 @@ ContactList.propTypes = {
   ).isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
+
 export default ContactList;
